@@ -16,7 +16,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
+        with:
+          submodules: recursive
       # Install Zola manually
       - name: Install Zola
         uses: taiki-e/install-action@v2
